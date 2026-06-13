@@ -219,33 +219,4 @@ def create_model(
 
     else:
 
-        raise ValueError(
-            f"Modelo '{model_name}' não suportado."
-        )
-
-
-# ============================================================
-# TESTE LOCAL
-# ============================================================
-
-# if __name__ == "__main__":
-
-#     x = torch.randn(
-#         2,
-#         5,
-#         91,
-#         109,
-#         91
-#     )
-
-#     model = create_model("cnn")
-
-#     y = model(x)
-
-#     print("CNN:", y.shape)
-
-#     model = create_model("deepcnn")
-
-#     y = model(x)
-
-#     print("DeepCNN:", y.shape)
+        raise ValueError(f"Modelo '{model_name}' não suportado.")
